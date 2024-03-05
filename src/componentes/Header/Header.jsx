@@ -5,25 +5,35 @@ import styled from "styled-components"
 const HeaderStyle = styled.header`
     background-color: #fadbfa;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
 `  
 const Img = styled.img`
-    width: 15vw;
+    width: 13vw;
+    height: 15vh;
 `
 const Li = styled.li`
     color: purple;
+    &:hover{
+        color:#dc6fdc;
+        text-shadow: 2px 2px 1px white;
+
+    }
 `
 const Li1 = styled.li`
     color: #dc6fdc;
+    &:hover{
+        color: purple;
+    }
 `
 const Ul = styled.ul`
     width: 70vw;
-    height: 15vh;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     font-size: 1.5rem;
-`
+    `
 
 function Header(){
     return(
